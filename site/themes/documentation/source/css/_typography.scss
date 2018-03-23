@@ -1,0 +1,73 @@
+$highlightColor: #34495e;
+$subColor: #444444;
+$light-grey: #CBCBCB;
+
+h1 {
+  border-bottom: 1px solid $bordersColor;
+  margin-bottom: 30px;
+  line-height: 50px;
+  font-size: 34px;
+  font-weight: 800;
+  color: $highlightColor;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: $highlightColor;
+  margin-bottom: 20px;
+  margin-top: 30px;
+
+  a {
+    color: $highlightColor;
+
+    &::before {
+      content: "# ";
+      color: $light-grey;
+    }
+
+    &:hover {
+      color: $highlightColor;
+
+      &::before {
+        color: $primary;
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: $highlightColor;
+  margin-bottom: 20px;
+  margin-top: 90px;
+
+  &::before {
+    content: "# ";
+    color: $primary;
+  }
+}
+
+p, ul li {
+  color: $highlightColor;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+p {
+  margin-bottom: 2em;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
