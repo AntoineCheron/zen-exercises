@@ -12,16 +12,10 @@
     <div class='logo'>
       <a href="<%= config.root %>"><%= config.title %></a>
     </div>
-    <ul id='nav'>
-      <% for (var i=0; i < site.data.nav.length; i++) { var link = site.data.nav[i]; %>
-      <li> <a href='<%- url_for(link.id + "/index.html")%>'> <%= link.title %> </a> </li>
-      <% } %>
-    </ul>
   </div>
   <div class='sidebar'>
     <nav class='sidebar-nav'>
-      <% if (site.data[page.parent]) {
-        for(var i=0; i < site.data[page.parent].length; i++) { var section = site.data[page.parent][i] %>
+      <% for(var i=0; i < site.data.nav.length; i++) { var section = site.data.nav[i] %>
         <ul class='nav'>
           <span><%= section.title %></span>
           <ul class='nav'>
@@ -35,11 +29,8 @@
             <% } %>
           </ul>
         </ul>
-      <% }} %>
+      <% } %>
     </nav>
-    <a class='footer' href='https://github.com/AntoineCheron/padins-backend'>
-      Project on github
-    </a>
   </div>
   <div class='page'>
     <div class='page-content'>

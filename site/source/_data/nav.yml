@@ -1,2 +1,10 @@
+- title: Introduction
+  items:
+  - id: index
+    title: Accueil
 - title: Functional
-  id: functional
+  items:
+  - id: functional
+    title: Introduction
+  - id: java-streams
+    title: Streams

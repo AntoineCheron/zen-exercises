@@ -13,7 +13,7 @@ timezone: GMT+1
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://antoinecheron.github.io/
-root: /exercises/
+root: /zen-exercises/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -78,6 +78,6 @@ theme: documentation
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/AntoineCheron/exercises
+  repo: https://github.com/AntoineCheron/zen-exercises
   branch: gh-pages
   message: "Site updated: {{ now('YYY-MM-DD HH:mm:ss') }}"
